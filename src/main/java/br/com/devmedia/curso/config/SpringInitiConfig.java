@@ -1,11 +1,12 @@
 package br.com.devmedia.curso.config;
 
+import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
  * Substitui o uso do arquivo web.xml porem tem que estender a classe {@link AbstractAnnotationConfigDispatcherServletInitializer}
  */
-public class SpringInitiConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class SpringInitiConfig extends AbstractAnnotationConfigDispatcherServletInitializer implements WebApplicationInitializer {
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
